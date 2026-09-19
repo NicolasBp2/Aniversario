@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Una experiencia creada especialmente para nosotros.">
+  <title>Nuestra historia ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="lock-screen" class="lock-screen">
+    <div class="lock-orb"></div>
+    <div class="lock-content">
+      <span class="eyebrow">PARA TI</span>
+      <h1>Hay algo que hice<br><em>especialmente para ti.</em></h1>
+      <p>Introduce el código para descubrirlo.</p>
+      <div id="pin-dots" class="pin-dots" aria-label="Código de 6 dígitos"></div>
+      <div id="pin-keypad" class="keypad"></div>
+      <p id="pin-message" class="pin-message" aria-live="polite"></p>
+    </div>
+  </div>
+
+  <main id="site" class="site" aria-hidden="true">
+    <header class="topbar">
+      <a class="brand" href="#intro">N<span>♥</span>B</a>
+      <nav id="chapter-nav" aria-label="Capítulos"></nav>
+      <button id="music-btn" class="music-btn" type="button" aria-label="Activar música">♫ Música</button>
+    </header>
+
+    <section id="intro" class="hero chapter">
+      <div class="hero-copy reveal">
+        <span class="eyebrow">NUESTRA HISTORIA · 01</span>
+        <h1>2 Años, miles de recuerdos y una historia que <em>todavía estamos escribiendo.</em></h1>
+        <p>Este pequeño lugar guarda algunos de los momentos, detalles y razones por las que me alegra tanto ser tu novio.</p>
+        <a class="button" href="#historia">Comenzar <span>↓</span></a>
+      </div>
+      <div class="hero-photo photo-frame reveal">
+        <img data-photo="portada" alt="Nuestro recuerdo favorito">
+      </div>
+    </section>
+
+    <section id="historia" class="chapter story-section">
+      <div class="section-heading reveal">
+        <span class="eyebrow">02 · NUESTRA HISTORIA</span>
+        <h2>Algunas fechas que<br><em>siempre recordare.</em></h2>
+      </div>
+      <div id="timeline" class="timeline"></div>
+    </section>
+
+    <section id="tu" class="chapter you-section">
+      <div class="section-heading reveal">
+        <span class="eyebrow">03 · TÚ</span>
+        <h2>Las pequeñas cosas<br><em>que adoro de ti.</em></h2>
+      </div>
+      <div id="qualities" class="qualities"></div>
+    </section>
+
+    <section id="nosotros" class="chapter us-section">
+      <div class="section-heading reveal">
+        <span class="eyebrow">04 · NOSOTROS</span>
+        <h2>No es solamente quién eres.<br><em>Es lo que somos juntos.</em></h2>
+      </div>
+      <div id="collage" class="collage"></div>
+      <div id="relationship-cards" class="relationship-cards"></div>
+    </section>
+
+    <section id="futuro" class="chapter future-section">
+      <div class="future-intro reveal">
+        <span class="eyebrow">05 · FUTURO</span>
+        <h2>2 años<br><em>que seguiran continuando.</em></h2>
+        <p>No sabemos exactamente pasara en un futuro. Y quizá esa sea una de las partes más bonitas: todavía nos quedan muchas cosas por vivir y pasar al lado del otro.</p>
+      </div>
+      <div id="future-grid" class="future-grid"></div>
+      <p class="continues reveal">TO BE CONTINUED <span>♡</span></p>
+    </section>
+
+    <section id="gracias" class="chapter letter-section">
+      <div class="letter-photo photo-frame reveal">
+        <img data-photo="carta" alt="Un recuerdo especial">
+      </div>
+      <article class="letter reveal">
+        <span class="eyebrow">06 · GRACIAS</span>
+        <h2>Una carta para ti.</h2>
+        <div id="letter-text"></div>
+        <p class="signature">Con amor,<br><strong id="signature"></strong></p>
+      </article>
+    </section>
+
+    <section class="finale chapter">
+      <div class="finale-image photo-frame reveal">
+        <img data-photo="final" alt="Nosotros">
+      </div>
+      <div class="finale-copy reveal">
+        <span class="eyebrow">Y ESTE ES SOLO EL PRINCIPIO</span>
+        <h2 id="final-phrase"></h2>
+        <p id="final-thanks"></p>
+        <div id="initials" class="initials"></div>
+      </div>
+      <div id="particles" class="particles"></div>
+    </section>
+
+    <audio id="background-audio" loop preload="none">
+      <source src="audio/nuestra-cancion.mp3" type="audio/mpeg">
+    </audio>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
